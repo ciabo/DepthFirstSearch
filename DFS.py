@@ -15,7 +15,8 @@ def DFSVisit(u):
     u.setD(time)
     u.setColor("gray")
     for node in u.getSons():
-        if node.getColor=="white":
+        c=node.getColor()
+        if node.getColor() is "white":
             node.setParent(u)
             DFSVisit(node)
     u.setColor("black")

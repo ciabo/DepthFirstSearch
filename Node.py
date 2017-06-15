@@ -3,8 +3,8 @@ class Node:
         self.color= "white"
         self.parent=None
         self.sons=[]
-        self.discoveredTime
-        self.endTime
+        self.discoveredTime=-1
+        self.endTime=-1
 
     def setColor(self,color):
         self.color=color
