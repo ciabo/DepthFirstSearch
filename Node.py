@@ -35,3 +35,6 @@ class Node:
 
     def getEndTime(self):
         return self.endTime
+
+    def setSon(self):
+        self.sons = []

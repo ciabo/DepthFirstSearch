@@ -15,10 +15,9 @@ def createGraph(vertices, edges):
     returnList=[adjMatrix,nodeList]
     return returnList
 
-def transpose(matrix):
-    nodeList = []
-    for i in range(0,len(matrix)):
-        nodeList.append(Node.Node())
+def transpose(nodeList,matrix):
+    for i in range(0, len(nodeList) - 1):
+        nodeList[i].setSon()
     transposedMatrix=AdjacencyMatrix.traspose(matrix)
     for i in range(0, len(matrix)):
         for j in range(0,len(matrix)):
